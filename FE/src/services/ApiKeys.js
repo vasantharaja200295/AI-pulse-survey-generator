@@ -1,0 +1,1 @@
+export const GET_PULSES = 'GET_PULSES';
