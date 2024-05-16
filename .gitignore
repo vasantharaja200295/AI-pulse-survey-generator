@@ -24,3 +24,6 @@ FE/*.local
 *.sw?
 
 .venv
+
+BE/resources/__pycache__
+BE/services/__pycache__

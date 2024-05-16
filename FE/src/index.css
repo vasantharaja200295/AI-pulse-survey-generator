@@ -73,4 +73,51 @@
     body {
       @apply bg-background text-foreground;
     }
+    h1 {
+      @apply mt-4 mb-4 text-4xl font-extrabold tracking-tight lg:text-5xl;
+    }
+    
+    h2 {
+      @apply mt-10 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0;
+    }
+    
+    h3 {
+      @apply mt-8 text-2xl font-semibold tracking-tight;
+    }
+    
+    p {
+      @apply leading-7;
+    }
+    
+    p:not(:first-child) {
+      @apply mt-6;
+    }
+    
+    a {
+      @apply font-medium text-primary underline underline-offset-4;
+    }
+    
+    blockquote {
+      @apply mt-6 border-l-2 pl-6 italic;
+    }
+    
+    ul {
+      @apply my-6 ml-6 list-disc;
+    }
+    
+    ul li {
+      @apply mt-2;
+    }
+    
+    table {
+      /* Add your table styles here using Tailwind classes */
+      @apply border collapse w-full; /* Example starting styles */
+    }
+    
+    th,
+    td {
+      /* Add your table cell styles here using Tailwind classes */
+      @apply border px-4 py-2; /* Example starting styles */
+    }
+    
   }

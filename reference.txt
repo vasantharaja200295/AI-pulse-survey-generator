@@ -1,0 +1,40 @@
+pulse schema
+
+fields:
+- id
+- title
+- description
+- created date
+- valid through / expires date
+- questions
+    - title
+    - options
+        - option 1
+        - option 2
+        ...
+    ...
+
+
+sample document
+{
+    pulse: [
+        {
+            "id": mongodb id,
+            "title": text,
+            "description": text,
+            "created_date": Date obj,
+            "expires_on": Date obj,
+            "questions" : [
+                {
+                    "title": text,
+                    "options":[
+                        {
+                            "id": integer,
+                            "title": text
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
